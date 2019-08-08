@@ -79,7 +79,7 @@
 
     // Download the data
     myConnector.getData = function(table, doneCallback) {
-        $.getJSON("https://data.cnra.ca.gov/api/3/action/current_package_list_with_resources?limit=400", function(resp) {
+        $.getJSON("https://data.cnra.ca.gov/api/3/action/current_package_list_with_resources?limit=10", function(resp) {
             var tableData = [];
 
             // Iterate over the JSON object
